@@ -47,10 +47,36 @@ const users = [
     email: "pune@gmail.com"
 }
 ];
-console.log(users[2].email);
+// console.log(users[2].email);
 
-console.log(Object.keys(User)); //an array of keys in object
-console.log(Object.values(User));//an array of values in object
-console.log(Object.entries(User));//an array inside array for each key and value
+// console.log(Object.keys(User)); //an array of keys in object
+// console.log(Object.values(User));//an array of values in object
+// console.log(Object.entries(User));//an array inside array for each key and value
 
-console.log(User.hasOwnProperty('isLoggedIn')); // to check if that object has this property or key
+// console.log(User.hasOwnProperty('isLoggedIn')); // to check if that object has this property or key
+
+const course = {
+    courseName: "Javascript",
+    price: "999",
+    courseInstructor:"Puneet"
+};
+
+const {courseInstructor} =course; //destructuring of object
+console.log(courseInstructor);
+
+const {courseInstructor : instructor} = course; //destructuring along with desirable name
+console.log(instructor);
+
+// JSON format 
+// {
+//     "name" : "Puneet",
+//     "age" : 27,
+//     "education" : "B.Tech",
+// }
+
+//we can get in the form of array of objects
+[
+    {},
+    {},
+    {}
+]
