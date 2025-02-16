@@ -4,7 +4,7 @@ const randomColor = function () {
     const hexValue = '0123456789ABCDEF';
     let color = '#';
     for (let i = 0; i < 6; i++){
-        color = color + hex[Math.floor(math.random() * 16)];
+        color = color + hexValue[Math.floor(Math.random() * 16)];
     }
     return color;
 }
@@ -15,7 +15,7 @@ const startChangingColor = () => {
     
 function changeBgColor () {
     document.body.style.backgroundColor = randomColor();
-}
+};
 
 if(!intervalId){
     intervalId = setInterval(changeBgColor, 1000);
